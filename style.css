@@ -1,0 +1,114 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+#main-container {
+  background-color: black;
+  display: flex;
+}
+#container {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  background-color: black;
+}
+.img-fld1 {
+  width: 100%;
+  height: 630px;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px 20px;
+}
+.img1-1 {
+  height: 629px;
+  width: 100%;
+}
+.img2-1 {
+  height: 629px;
+}
+
+.img-fld2 {
+  width: 100%;
+  height: 600px;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px 20px;
+}
+
+.img1-2 {
+  height: 600px;
+  width: 100%;
+}
+.img2-2 {
+  height: 600px;
+  width: 100%;
+}
+.img3-2 {
+  height: 600px;
+  width: 100%;
+}
+
+.img-fld3 {
+  width: 100%;
+  height: 600px;
+
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 20px 20px;
+}
+
+.img1-3 {
+  height: 650px;
+  width: 100%;
+}
+
+.img2-3 {
+  height: 650px;
+  width: 100%;
+}
+
+#text-containt {
+  height: 1050px;
+  width: 750px;
+  margin-top: 250px;
+}
+.shutter {
+  color: white;
+  text-align: right;
+  font-size: 70px;
+  position: relative;
+  top: 40px;
+}
+
+p {
+  font-size: 40px;
+  text-align: right;
+  font-weight: 800;
+  color: white;
+  padding: 10px;
+  position: relative;
+  top: 90px;
+}
+
+#icons {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  position: relative;
+  left: 500px;
+  gap: 50px;
+  top: 170px;
+}
+.face-icon {
+  background: white;
+}
+.twitter-icon {
+  background: white;
+}
+.insta-icon {
+  background: white;
+}
