@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Google Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <!-- <script>
+        function initMap() {
+            var location = { lat: 35.6762, lng: 139.6503 };  // Example: Tokyo coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script> -->
+</head>
+<body onload="initMap()">
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> Saint Marco Street, G8, Tokyo, Japan, 123456.</p>
+            <p><strong>Phone:</strong> +81 1234567890</p>
+            <p><strong>Email:</strong> <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14690.244572206606!2d72.5559743!3d23.00316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c8b20531ff%3A0x976bc0df6366e5eb!2sZudio!5e0!3m2!1sen!2sin!4v1728971731257!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div id="map" style="width: 100%; height: 10px;"></div>
+
+        <form action="submit_form.php" method="POST" id="contact-form">
+            <input type="text" name="name" id="name" placeholder="Name" required minlength="3" maxlength="30" pattern="[a-zA-Z\s]+" title="Alphabets only">
+            <input type="text" name="company" id="company" placeholder="Company" maxlength="50">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="tel" name="mobile" id="mobile" placeholder="Mobile" required pattern="\d{10,}" title="10 digits minimum">
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
